@@ -1,0 +1,109 @@
+body {
+	background: rgba(0, 0, 0, 0) linear-gradient(90deg, #d3f3c8,#3bc2da,  #3bc2da, #3bc2da,#d3f3c8) repeat scroll 0 0;
+	font-size:11px;
+}
+
+body #bodyLogin{
+	background-image: url('../gambar/jt.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.box{
+	width:30%;
+	min-height:200px;
+	border:100px solid;
+}
+
+.service-box {
+	margin-bottom: 35px;
+	background:green;
+}
+
+.service-center {
+	text-align: center;
+}
+
+.service-icon-left .service-icon {
+	float: left;
+}
+
+.service-icon-left .service-content {
+	padding-left: 45px;
+}
+
+.service-icon-left-more .service-icon {
+	float: left;
+}
+
+.service-icon-left-more .service-content {
+	padding-left: 60px;
+}
+
+.service-center .service-icon {
+	margin-bottom: 14px;
+}
+
+.service-center .service-content h4 {
+	margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.service-center .service-icon i {
+	display: inline-block;
+}
+
+
+.form-login{
+	margin: 250px auto;
+}
+
+
+#head {
+width:850px;
+height:150px;
+padding:0px;
+margin:auto;
+}
+
+#head_t {
+width:150px;
+height:150px;
+padding:0px;
+margin:auto;
+float:left;
+}
+#head_k1 {
+width:150px;
+height:150px;
+padding:0px;
+margin:auto;
+float:left;
+background:url("<?php echo base_url().'assets/gambar/jt.png'?>");
+}
+
+#head_k2 {
+width:550px;
+height:20px;
+padding:0px;
+margin:auto;
+float:left;
+font:Times New Roman;
+font-size:24px;
+font-weight:bold;
+color: #969696;
+padding-top:60px;
+}
+
+#wrapper{
+	 width: 800px;
+     margin: 0 auto;
+}
+
+hr {
+
+	border : 1;
+	height : 2px;
+	background-image: linear-gradient(to right, rgba(255, 254, 254, 0), rgba(240, 229, 229, 0.75), rgba(250, 246, 246, 0));
+
+}

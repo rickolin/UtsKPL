@@ -1,0 +1,230 @@
+/* ------ general
+-----------------------------------------------*/
+
+body {
+
+/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #AED5EF 50%, #E3EFE1 75%, #BFBFDB 87.5%, #3D3B3C 93.75%, #898986 96.875%, #AED5EF 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #AED5EF 50%, #E3EFE1 75%, #BFBFDB 87.5%, #3D3B3C 93.75%, #898986 96.875%, #AED5EF 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #FFFFFF 0%, #AED5EF 50%, #E3EFE1 75%, #BFBFDB 87.5%, #3D3B3C 93.75%, #898986 96.875%, #AED5EF 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(0.5, #AED5EF), color-stop(0.75, #E3EFE1), color-stop(0.875, #BFBFDB), color-stop(0.9375, #3D3B3C), color-stop(0.96875, #898986), color-stop(1, #AED5EF));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #AED5EF 50%, #E3EFE1 75%, #BFBFDB 87.5%, #3D3B3C 93.75%, #898986 96.875%, #AED5EF 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #FFFFFF 0%, #AED5EF 50%, #E3EFE1 75%, #BFBFDB 87.5%, #3D3B3C 93.75%, #898986 96.875%, #AED5EF 100%);
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+
+.bodyLogin{
+	background-image: url(<"?php echo base_url().'assets/image/tugu_muda.jpg'?>");
+}
+
+.wrapper {
+margin:auto;
+width:850px;
+height:auto;
+padding:0px;
+border-top:1px dashed #181818;
+}
+.main {
+width:850px;
+height:auto;
+padding:0px;
+margin:auto;
+}
+#head {
+width:850px;
+height:150px;
+padding:0px;
+margin:auto;
+}
+#head_t {
+width:150px;
+height:150px;
+padding:0px;
+margin:auto;
+float:left;
+}
+#head_k1 {
+width:150px;
+height:150px;
+padding:0px;
+margin:auto;
+float:left;
+background:url("../gfx/jt.png");
+
+}
+#head_k2 {
+width:550px;
+height:20px;
+padding:0px;
+margin:auto;
+float:left;
+font:Times New Roman;
+font-size:24px;
+font-weight:bold;
+color: #969696;
+padding-top:60px;
+}
+
+.blocks p {
+margin-bottom:15px;
+position:relative;
+}
+
+.btn {
+display:block;
+float:left;
+height:31px;
+line-height:31px;
+padding:0 10px;
+background:url(../gfx/bgbtn.jpg) repeat-x;
+color:#565e62;
+font-weight:bold;
+font-size:11px;
+border:1px solid #e1e0df;
+outline:none;
+}
+
+.text,
+.textarea {
+padding:5px 10px;
+height:27px;
+border:1px solid #ddd;
+color:#333;
+background:url(../gfx/bginput.jpg) repeat-x bottom #fff;
+position:relative;
+z-index:2;
+}
+
+.text {
+width:220px;
+}
+.textarea {
+height:170px;
+width:350px;
+}
+
+.textarea1 {
+height:50px;
+width:350px;
+padding:5px 10px;
+border:1px solid #ddd;
+color:#333;
+background:url(../gfx/bginput.jpg) repeat-x bottom #fff;
+position:relative;
+z-index:2;
+
+}
+.textarea2 {
+height:110px;
+width:350px;
+padding:5px 10px;
+border:1px solid #ddd;
+color:#333;
+background:url(../gfx/bginput.jpg) repeat-x bottom #fff;
+position:relative;
+z-index:2;
+}
+.blocks label {
+float:left;
+width:100px;
+line-height:17px;
+text-align:right;
+margin-right:15px;
+font-weight:bold;
+color: #2D2D2D;
+font-size:14px;
+}
+
+.blocks label.error,
+.blocks label.ok {
+position:absolute;
+z-index:1;
+top:-4px;
+left:110px;
+padding:5px 15px 5px 280px;
+/*reset label*/
+width:auto;
+text-align:left;
+margin:0;
+background-repeat:no-repeat;
+background-position:257px 16px;
+}
+
+.blocks label.ok {
+background-image:url(../gfx/icook.gif);
+background-color:#deefca;
+color:#577530;
+}
+
+.blocks label.error {
+background-image:url(../gfx/icofail.gif);
+background-color:#f5d6d7;
+color:#c81925;
+}
+
+.area label.ok,
+.area label.error {
+height:63px;
+padding-left:410px;
+background-position:387px 16px;
+}
+
+.re label.ok,
+.re label.error {
+height:123px;
+padding-left:410px;
+background-position:387px 16px;
+}
+
+/* CSS3 */
+.btn,
+.text,
+.textarea1,
+.textarea2,
+.blocks label.error,
+.blocks label.ok { 
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+}
+
+a {
+color: #CCCCCC;
+}
+
+a img {
+border:none;
+}
+h2 {
+padding:0px;
+margin:auto;
+color:#969696;
+}
+.booth{
+	width: 400px;
+	background-color: #ccc;
+	border: 10px solid #ddd;
+	margin: 0 auto;
+}
+.booth-capture-button{
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	background-color: cornflowerblue;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
