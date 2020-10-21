@@ -49,7 +49,6 @@ class DashboardAdminController extends CI_Controller {
 		if ( function_exists( 'date_default_timezone_set' ) ){
     		date_default_timezone_set('Asia/Jakarta');
 			$tahun = date("Y");
-			$bulan_sekarang = date("n");
 		}
 		$data['judul'] = 'Dashboard Admin';
 
