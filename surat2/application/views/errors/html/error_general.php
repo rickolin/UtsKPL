@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +58,7 @@ p {
 <body>
 	<div id="container">
 		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+		<?php echo html_escape($message); ?>
 	</div>
 </body>
 </html>
