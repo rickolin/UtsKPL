@@ -58,7 +58,7 @@ p {
 <body>
 	<div id="container">
 		<h1><?php echo $heading; ?></h1>
-		<?php echo html_escape($message); ?>
+		<?php echo $message; ?>
 	</div>
 </body>
 </html>
