@@ -7,17 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="<?php echo base_url().'assets/css/styles.css'?>" rel="stylesheet">
+    <link href="<?php /* @noEscape */ echo base_url().'assets/css/styles.css'?>" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <link href="<?php echo base_url().'assets/css/sb-admin-2.min.css'?>" rel="stylesheet">
-    <link href="<?php echo base_url().'assets/vendor/fontawesome-free/css/all.min.css'?>" rel="stylesheet">
-    <link href="<?php echo base_url().'assets/css/css/bootstrap-datepicker3.css'?>" rel="stylesheet">
+    <link href="<?php /* @noEscape */ echo base_url().'assets/css/sb-admin-2.min.css'?>" rel="stylesheet">
+    <link href="<?php /* @noEscape */ echo base_url().'assets/vendor/fontawesome-free/css/all.min.css'?>" rel="stylesheet">
+    <link href="<?php /* @noEscape */ echo base_url().'assets/css/css/bootstrap-datepicker3.css'?>" rel="stylesheet">
     <title><?= $judul ?></title>
     <link rel="shortcut icon" type="image/png" href="assets/gambar/jt.png">
   </head>
 <body style="background-color:#d3f3c8 ">
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #032d38">
-  <a class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Registrasi" href="<?php echo base_url().'FormInputSuratController'?>">Surat</a>
+  <a class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Registrasi" href="<?php /* @noEscape */ echo base_url().'FormInputSuratController'?>">Surat</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -30,14 +30,14 @@
         <?php else: ?>
           <li class="nav-item">
         <?php endif; ?>
-        <a class="nav-link" href="<?php echo base_url().'DashboardAdminController'?>">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?php /* @noEscape */ echo base_url().'DashboardAdminController'?>">Home <span class="sr-only">(current)</span></a>
         </li>
         <?php if($where == 'ListVerifikatorController' ): ?>
         <li class="nav-item active">
         <?php else: ?>
           <li class="nav-item">
         <?php endif; ?>
-        <a class="nav-link" href="<?php echo base_url().'ListVerifikatorController'?>">Verifikator <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?php /* @noEscape */ echo base_url().'ListVerifikatorController'?>">Verifikator <span class="sr-only">(current)</span></a>
         </li>
       <?php endif; ?>
 
@@ -46,13 +46,13 @@
       <?php else: ?>
         <li class="nav-item">
       <?php endif; ?>
-      <a class="nav-link" href="<?php echo base_url().'SuratMasukController'?>">Registrasi&nbsp;
+      <a class="nav-link" href="<?php /* @noEscape */ echo base_url().'SuratMasukController'?>">Registrasi&nbsp;
         <?php if($where != 'SuratMasukController' && $surat_masuk >0): ?>
           <span class="badge badge-danger badge-counter">
             <?php if($surat_masuk <= 5){
-              echo $surat_masuk;
+              /* @noEscape */ echo $surat_masuk;
               }else{
-                echo "5+";
+                /* @noEscape */ echo "5+";
               }
             ?> 
           </span>
@@ -65,7 +65,7 @@
         <?php else: ?>
         <li class="nav-item">
       <?php endif; ?>
-      <a class="nav-link" href="<?php echo base_url().'SuratTerverifikasiController'?>">Surat Terverifikasi</a>
+      <a class="nav-link" href="<?php /* @noEscape */ echo base_url().'SuratTerverifikasiController'?>">Surat Terverifikasi</a>
       </li>   
 
       <?php if($where == 'verifikasi'): ?>
@@ -87,7 +87,7 @@
       <?php endif; ?>
     </ul>
     <?php if ($this->session->userdata('masuk') != TRUE) : ?>
-    <form class="form-inline my-2 my-lg-0" action="<?php echo base_url().'index.php/LoginController/auth'?>" method="post">
+    <form class="form-inline my-2 my-lg-0" action="<?php /* @noEscape */ echo base_url().'index.php/LoginController/auth'?>" method="post">
       <?php if($this->session->flashdata('harus_login')): ?>
       <input type="text" id="username" name="username" class="form-control mr-sm-2" placeholder="Username" required autofocus>
       <?php else: ?>
@@ -104,7 +104,7 @@
           <i class="fas fa-user-shield"></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="<?php echo base_url().'GantiPassController'?>">
+            <a class="dropdown-item" href="<?php /* @noEscape */ echo base_url().'GantiPassController'?>">
             <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
             Ganti Password
             </a>
@@ -156,7 +156,7 @@
         <div class="modal-body">Pilih "Logout" Dibawah Ini Untuk Mengakhiri Session Anda.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a href="<?php echo base_url().'index.php/LogoutController'?>" class="btn btn-primary">Logout</a>
+          <a href="<?php /* @noEscape */ echo base_url().'index.php/LogoutController'?>" class="btn btn-primary">Logout</a>
         </div>
       </div>
     </div>
