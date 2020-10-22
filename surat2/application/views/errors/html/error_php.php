@@ -6,7 +6,7 @@ defined('BASEPATH') ;
 
 <h4>A PHP Error was encountered</h4>
 
-<p>Severity: <?php echo echo html_escape($severity); ?></p>
+<p>Severity: <?php echo html_escape($severity); ?></p>
 <p>Message:  <?php echo $message; ?></p>
 <p>Filename: <?php echo $filepath; ?></p>
 <p>Line Number: <?php echo $line; ?></p>
