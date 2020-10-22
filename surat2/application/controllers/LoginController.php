@@ -65,7 +65,7 @@ class LoginController extends CI_Controller{
 		    }
 	}else{  // jika username dan password tidak ditemukan atau salah
 			$url=base_url();
-			echo $this->session->set_flashdata('msg','Username Atau Password Salah');
+			echo html_escape($this->session->set_flashdata('msg','Username Atau Password Salah'));
 			redirect($url);
 		}
 	}

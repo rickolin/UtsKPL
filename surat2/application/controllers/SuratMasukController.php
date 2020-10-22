@@ -294,7 +294,7 @@ class SuratMasukController extends CI_Controller {
    $data['jumlah_surat_masuk']= $this->m_surat_masuk->hitungBaris(NULL, NULL, NULL);
    $data['surat_masuk'] = $data['jumlah_surat_masuk']['jumlah'];
    if($this->session->userdata('masuk') != TRUE){
-      echo $this->session->set_flashdata('harus_login','Login Terlebih Dahulu Untuk Verifikasi!');
+      echo html_escape($this->session->set_flashdata('harus_login','Login Terlebih Dahulu Untuk Verifikasi!'));
       redirect('SuratMasukController');
    }
 

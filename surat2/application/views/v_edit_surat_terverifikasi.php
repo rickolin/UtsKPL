@@ -2,7 +2,7 @@
 <?php foreach ($data_surat as $row): ?>
 <span style="text-align: center;">
     <h3 style="margin-top: 20px">
-    Verifikasi Surat <?php echo $row['jenis_perusahaan']; ?> <?php echo $row['nama_perusahaan'];?>     
+    Verifikasi Surat <?php echo html_escape($row['jenis_perusahaan']); ?> <?php echo html_escape($row['nama_perusahaan']);?>     
     </h3>
 </span>
 <div class="container" style="margin-top: 30px; color: black">

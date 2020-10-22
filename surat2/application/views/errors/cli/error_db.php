@@ -2,7 +2,7 @@
 defined('BASEPATH') ;
 
 echo "\nDatabase error: ",
-	$heading,
+	html_escape($heading),
 	"\n\n",
 	$message,
 	"\n\n";
